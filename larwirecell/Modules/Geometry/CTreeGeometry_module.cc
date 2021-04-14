@@ -63,7 +63,7 @@
 
 using namespace std;
 
-namespace icarus {
+namespace {
 
 class CTreeGeometry : public art::EDAnalyzer {
 public:
