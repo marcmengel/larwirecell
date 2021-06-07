@@ -14,7 +14,7 @@
 
 cmake_minimum_required (VERSION 3.19 FATAL_ERROR)
 
-project(larwirecell 09.02.06 LANGUAGES CXX)
+project(larwirecell VERSION 09.02.06 LANGUAGES CXX)
 
 find_package(cetmodules REQUIRED)
 find_package(canvas_root_io)
