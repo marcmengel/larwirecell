@@ -13,7 +13,7 @@ art_make_library(
     art::Framework_Principal
     art::Framework_Services_Registry
     art::Persistency_Provenance
-    art::Utitlites
+    art::Utilities
     ${JSONCPP}
     ROOT::Core
     ${WIRECELL_LIBS}

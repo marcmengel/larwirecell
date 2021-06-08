@@ -22,7 +22,7 @@ art_make( MODULE_LIBRARIES larcorealg_Geometry
                            fhiclcpp::fhiclcpp fhiclcpp::types
                            ${CETLIB}
                            cetlib_except
-                           ${CLHEP}
+                           
                            ${ROOT_GEOM}
                            ${ROOT_XMLIO}
                            ${ROOT_GDML}
