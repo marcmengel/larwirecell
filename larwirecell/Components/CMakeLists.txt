@@ -9,11 +9,11 @@ art_make_library(
   LIBRARY_NAME WireCellLarsoft
   SOURCE ${wcls_components_sources}
   LIBRARIES
-    ${ART_FRAMEWORK_CORE}
-    ${ART_FRAMEWORK_PRINCIPAL}
-    ${ART_FRAMEWORK_SERVICES_REGISTRY}
-    ${ART_PERSISTENCY_PROVENANCE}
-    ${ART_UTILITIES}
+    art::Framework_Core
+    art::Framework_Principal
+    art::Framework_Services_Registry
+    art::Persistency_Provenance
+    art::Utitlites
     ${JSONCPP}
     ROOT::Core
     ${WIRECELL_LIBS}
