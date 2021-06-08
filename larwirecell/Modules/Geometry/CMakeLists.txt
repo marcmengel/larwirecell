@@ -17,9 +17,9 @@ art_make( MODULE_LIBRARIES larcorealg_Geometry
                            art_Persistency_Provenance
                            art_Utilities
                            canvas
-                           ${MF_MESSAGELOGGER}
-                           ${MF_UTILITIES}
-                           ${FHICLCPP}
+                           messagefacility::MFMessageLogger
+                           messagefacility::headers
+                           fhiclcpp::fhiclcpp fhiclcpp::types
                            ${CETLIB}
                            cetlib_except
                            ${CLHEP}
