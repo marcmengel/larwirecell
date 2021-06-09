@@ -7,7 +7,7 @@ art_make( MODULE_LIBRARIES larcorealg_Geometry
                            larevt_Filters
                            lardataobj_RawData
                            larevt_CalibrationDBI_Providers
-                           art::Framwork_Core
+                           art::Framework_Core
                            art::Framework_Principal
                            art::Framework_Services_Registry
                            art::Framework_Services_System_FileCatalogMetadata_service art::Framework_Services_System_FloatingPointControl_service art::Framework_Services_System_TriggerNamesService_service
