@@ -40,7 +40,7 @@ find_ups_product( lardataalg )
 find_ups_product( larcoreobj )
 find_ups_product( larcorealg )
 find_ups_product( art )
-find_ups_product(art_root_io)
+find_package(art_root_io)
 
 find_ups_product( jsoncpp )
 find_ups_product( jsonnet )
