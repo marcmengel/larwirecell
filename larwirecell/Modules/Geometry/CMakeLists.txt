@@ -26,7 +26,7 @@ art_make( MODULE_LIBRARIES larcorealg_Geometry
                            ROOT::Core
                            ROOT::Geom
                            ROOT::XMLIO
-                           ROOT::GDML
+                           ROOT::Gdml
                            ROOT::MathCore
                            ROOT::Core
                            
