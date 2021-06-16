@@ -13,6 +13,7 @@ art_make( MODULE_LIBRARIES larcorealg_Geometry
                            art::Framework_Services_System_FileCatalogMetadata_service art::Framework_Services_System_FloatingPointControl_service art::Framework_Services_System_TriggerNamesService_service
                            art::Framework_Services_System_FloatingPointControl_service
                            art_root_io::TFileService_service_plugin
+                           art_root_io::tfile_support 
                            art_Persistency_Common
                            art_Persistency_Provenance
                            art_Utilities
@@ -22,11 +23,13 @@ art_make( MODULE_LIBRARIES larcorealg_Geometry
                            fhiclcpp::fhiclcpp fhiclcpp::types
                            ${CETLIB}
                            cetlib_except
+                           ROOT::Core
+                           ROOT::Geom
+                           ROOT::XMLIO
+                           ROOT::GDML
+                           ROOT::MathCore
+                           ROOT::Core
                            
-                           ${ROOT_GEOM}
-                           ${ROOT_XMLIO}
-                           ${ROOT_GDML}
-                           ${ROOT_BASIC_LIB_LIST}
         )
 
 #install_headers()
