@@ -12,7 +12,7 @@ art_make( MODULE_LIBRARIES larcorealg_Geometry
                            art::Framework_Services_Registry
                            art::Framework_Services_System_FileCatalogMetadata_service art::Framework_Services_System_FloatingPointControl_service art::Framework_Services_System_TriggerNamesService_service
                            art::Framework_Services_System_FloatingPointControl_service
-                           art_root_io::TFileService_service_plugin
+                           art_root_io::TFileService_service
                            art_root_io::tfile_support 
                            art_Persistency_Common
                            art_Persistency_Provenance
