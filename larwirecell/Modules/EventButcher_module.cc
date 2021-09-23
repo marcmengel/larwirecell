@@ -83,7 +83,7 @@ butcher::EventButcher::EventButcher(Parameters const& params)
     //cerr << "Producing: outraw:"<<m_cfg.outRawTag()<<" outsig:"<<m_cfg.outSigTag()<<" outras:" << m_cfg.outAssnTag() << endl;
     produces< std::vector<raw::RawDigit> >(m_cfg.outRawTag());
     produces< std::vector<recob::Wire> >(m_cfg.outSigTag());
-    produces< art::Assns<raw::RawDigit,recob::Wire> >(m_cfg.outAssnTag());
+    produces< art::Assns<raw::RawDigit,recob::Wire,void> >(m_cfg.outAssnTag());
 }
 
 butcher::EventButcher::~EventButcher()
@@ -115,7 +115,7 @@ void butcher::EventButcher::produce(art::Event & event)
     std::unordered_map<raw::ChannelID_t, art::Ptr<raw::RawDigit> > chid2rawptr;
 
     // raw-signal association
-    auto outrsa = std::make_unique< art::Assns<raw::RawDigit,recob::Wire> >();
+    auto outrsa = std::make_unique< art::Assns<raw::RawDigit,recob::Wire,void> >();
     auto outraw = std::make_unique< std::vector<raw::RawDigit> >();
     auto outsig = std::make_unique< std::vector<recob::Wire> >();
 
